@@ -1,0 +1,35 @@
+# =======================
+# Eclipse / IntelliJ IDE
+# =======================
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+
+# =======================
+# Build output
+# =======================
+/build/
+/bin/
+/target/
+/out/
+/*.war
+/*.ear
+
+# =======================
+# Web application build
+# =======================
+# (서버가 빌드 과정에서 자동 생성하는 클래스/리소스)
+/src/main/webapp/WEB-INF/classes/
+/src/main/webapp/WEB-INF/lib/
+
+# =======================
+# Logs / temp
+# =======================
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+db.properties
