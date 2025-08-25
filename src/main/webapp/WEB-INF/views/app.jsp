@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="dao.AccommodationDao, model.Accomodation, model.AccomCategoryEnum, model.BuildingCategoryEnum, java.util.*, java.math.BigDecimal" %>
+<%@ include file="/WEB-INF/views/common/header.jsp" %>
 <!DOCTYPE html>
 <html lang="ko">
 <head>

@@ -4,14 +4,14 @@
   <div class="container">
     <h1 class="logo">Airbnb Clone</h1>
     <nav>
-      <a href="<%=request.getContextPath()%>/index.jsp">홈</a>
+      <a href="<%=request.getContextPath()%>/">홈</a>
 
       <c:choose>
         <c:when test="${empty sessionScope.user}">
           <a href="<%=request.getContextPath()%>/login">로그인</a>
         </c:when>
         <c:otherwise>
-          <span class="welcome">${sessionScope.user.name}님</span>
+          <a href="<%=request.getContextPath()%>/members?team=${sessionScope.user.id}" class="welcome">${sessionScope.user.name}님</a>
           <a href="<%=request.getContextPath()%>/logout">로그아웃</a>
         </c:otherwise>
       </c:choose>
